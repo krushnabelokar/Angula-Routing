@@ -1,0 +1,38 @@
+<div class="header">
+  <div class="myHead">
+    <a routerLink="/dashboard/home"><h1>Admin Dashboard</h1></a>
+  </div>
+  <div>
+    <ul class="myList">
+      <li>
+        <a routerLink="/dashboard/home" id="li" routerLinkActive="activate"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a routerLink="/dashboard/services" id="li" routerLinkActive="activate"
+          >Services</a
+        >
+      </li>
+      <li>
+        <a routerLink="/dashboard/about" id="li" routerLinkActive="activate"
+          >About</a
+        >
+      </li>
+      <li>
+        <a routerLink="/dashboard/contact" id="li" routerLinkActive="activate"
+          >Contact</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/login"
+          class="logout"
+          routerLinkActive="activate"
+          (click)="logOut()"
+          >LogOut</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

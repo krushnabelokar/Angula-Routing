@@ -1,0 +1,83 @@
+<div>
+  <form
+    class="myForm"
+    [formGroup]="loginForm"
+    (ngSubmit)="handleSubmit(loginForm.value)"
+  >
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        formControlName="fname"
+        placeholder="First Name "
+      /><span *ngIf="loginForm.invalid && !fname?.touched"
+        >*Only letters allowed and name should start with capital letter
+        only</span
+      ><br />
+      <span *ngIf="fname && fname.invalid && fname.touched" style="color: red"
+        >***first name input field in not valid</span
+      >
+    </div>
+
+    <br />
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        formControlName="lname"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Last Name "
+      /><span *ngIf="loginForm.invalid && !lname?.touched"
+        >*Only letters allowed and name should start with capital letter
+        only</span
+      ><br />
+      <span *ngIf="lname && lname.invalid && lname.touched" style="color: red"
+        >***last name input field in not valid</span
+      >
+    </div>
+    <br />
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        formControlName="email"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Email "
+      />
+    </div>
+    <span *ngIf="loginForm.invalid && !fname?.touched"
+      >*Only alphabets spacial caracter (@) and numbers are allowed </span
+    ><br />
+    <span *ngIf="email && email.invalid && email.touched" style="color: red"
+      >***email input field in not valid</span
+    >
+    <br />
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control"
+        formControlName="pass"
+        id="exampleInputPassword1"
+        placeholder="Password"
+      />
+    </div>
+    <span *ngIf="loginForm.invalid && !fname?.touched"
+      >*Password should start with capital letter, special characters (@$) and
+      number allowed </span
+    ><br />
+    <span *ngIf="pass && pass.invalid && pass.touched" style="color: red"
+      >***password input field in not valid</span
+    >
+    <br />
+
+    <button
+      type="submit"
+      class="btn btn-primary form-control"
+      [disabled]="loginForm.invalid"
+    >
+      Submit
+    </button>
+  </form>
+</div>

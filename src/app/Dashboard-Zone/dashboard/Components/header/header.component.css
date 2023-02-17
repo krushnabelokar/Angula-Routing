@@ -1,0 +1,46 @@
+.header{
+      padding:20px;
+      background:dimgrey;
+      color:white;
+}
+
+
+.myList{
+      float:right;
+      margin-top: -40px;
+      margin-right:200px;
+}
+
+.myList a{
+      text-decoration: none;
+      color:white;
+}
+
+.myList li{
+      list-style-type: none;
+      display:inline-block;
+      margin-right:50px;
+      padding:5px;
+
+}
+
+#li:hover{
+      padding:7px;
+      background-color: rgb(37, 28, 28);
+}
+
+header:hover{
+      cursor:copy;
+}
+
+a{
+      text-decoration: none;
+      color:white;
+}
+
+.logout{
+      background:blue;
+      padding:5px;
+
+}
+

@@ -1,0 +1,17 @@
+.myForm{
+      width:500px;
+      margin-left:35%;
+      margin-top:5%;
+      padding:50px;
+      border:2px solid gray;
+}
+
+a{
+      margin-left:60%;
+}
+
+.heading{
+      text-align: center;
+      color:blueviolet;
+      margin-top:5%;
+}
